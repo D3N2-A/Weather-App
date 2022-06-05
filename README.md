@@ -1,2 +1,3 @@
 # Weather-App
-Fetching weather information from openWeather while learning API 
+Fetching weather information from openWeather 
+Made while learning API
