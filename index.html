@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Weather App</title>
 </head>
 
 <body>
     <form action="/" method="post">
-        <label for="cityName">City Name</label>
-        <input id="cityName" type="text" name="cityName" placeholder="eg: London, Hamirpur"><br>
+        <div class="form-group">
+            <div class="form-group py-4">
+                <label for="cityName">City Name</label>
+                <input id="cityName" type="text" name="cityName" placeholder="eg: London, Hamirpur"><br>
+            </div>
+            <div class="form-group py-4">
+                <label for="apiKey">API Key</label>
+                <input id="" type="text" name="apiKey" placeholder="eg:4720aa48fa8d52f9ce9ba5125f37c5f8"><br>
+            </div>
+            <div class="form-group py-4">
+                <label for="units">Units</label>
 
-        <label for="apiKey">API Key</label>
-        <input id="" type="text" name="apiKey" placeholder="eg:4720aa48fa8d52f9ce9ba5125f37c5f8"><br>
+                <input id="" type="text" name="units" placeholder="eg: metric, standard, imperial ">
+            </div>
 
-        <label for="units">Units</label>
-
-        <input id="" type="text" name="units" placeholder="eg: metric, standard, imperial ">
-
-
-        <button type="submit">Go!</button>
+            <button type="submit" class="btn btn-outline-dark">Go!</button>
+        </div>
     </form>
 </body>
 
